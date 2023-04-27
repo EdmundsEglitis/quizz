@@ -1,16 +1,53 @@
 html{
     --krasa:rgb(157, 9, 255);
+    --augstums:100px;
+}
+html[data-theme="light"]{
+    --fons: linear-gradient(to bottom, #ffffff 50%, #c0c0c0 100%);
+}
+html[data-theme="dark"]{
+    --fons: linear-gradient(to bottom, #000000 50%, #6b6b6b 100%);
+}
+
+
+html[data-theme="light"]{
+    --fons2: linear-gradient(to bottom, #c0c0c0 50%, #ffffff 100%);
+}
+html[data-theme="dark"]{
+    --fons2: linear-gradient(to bottom, #6b6b6b 50%, #000000 100%);
+}
+
+html[data-theme="light"]{
+    --teksts: BLACK;
+}
+html[data-theme="dark"]{
+    --teksts: wHITE;
+}
+
+body{
+    height: 50vw;
+    background: var(--fons);
+    
+    margin: 0;
+}
+main{
+    margin-top: var(--augstums);
+}
+header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: var(--fons2);
+    width: 100vw;
+    height: var(--augstums);
 }
 h1{
-    color: var(--krasa);
-}
-p{
-    color: var(--krasa);
+    color: var(--teksts);
 }
 h2{
-    color: var(--krasa);
+    color: var(--teksts);
 }
-body{
-    height: 100vw;
-    background: linear-gradient(in hsl longer hue 45deg, red 0 0);
+p{
+    color: var(--teksts);
 }
