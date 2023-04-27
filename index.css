@@ -10,7 +10,6 @@ p{
 h2{
     color: var(--krasa);
 }
-
 body{
     height: 100vw;
     background: linear-gradient(in hsl longer hue 45deg, red 0 0);
