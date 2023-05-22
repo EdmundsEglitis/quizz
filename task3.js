@@ -1,3 +1,14 @@
+async function json() {
+    const response = await fetch("questions (1).json");
+    const questions = await response.json();
+    console.log(questions);
+  }
+
+
+
+
+
+
 // Saglabā to checkboxu JS mainīgājā
 const toggleTheme = document.getElementById("toggle-theme");
 const html = document.getElementById("html");

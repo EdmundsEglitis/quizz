@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="lv" data-theme="dark" id="html">
+    <!DOCTYPE html>
+<html lang="lv" data-theme="light" id="html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,39 +9,37 @@
     <script src="slides.js" defer></script>
 </head>
 <body>
+    <main>
     <header>
-
-
-
-
-    </header>
+        <input type="checkbox" id="toggle-theme"/>
+      </header>
 <section>
 <h2>Kurš galamērķis atrodas uz 17 508 salām?</h2>
-    <ol>
-<li>Igaunija</li>
-<li>Lielbritānija</li>
-<li>Liepāja</li>
-<li>Indonēzija</li>
-    </ol>
+   <div class="grid-container">
+    <label> <input type="radio" name="1" value="Igaunija">Igaunija</label>
+    <label> <input type="radio" name="1" value="lielbritānija">lielbritānija</label>
+    <label> <input type="radio" name="1" value="Liepāja">Liepāja</label>
+    <label> <input type="radio" name="1" value="Indonēzija">Indonēzija</label>
+   </div>
 </section>
 <section>
-    <h2>Kurš galamērķis ir vienlaicīgi gan kontinents, gan valsts?
-    </h2>
-    <ol>
-<li>Liepāja</li>
-<li>Austrālija</li>
-<li>Lietuva</li>
-<li>Kanāda</li>
-    </ol>
-</section>
-<section>
-    <h2>Pie kura galamērķa ir īpašī aizsargājama ūdensputnu ligzdošanas teritorija, kas iekļauta "Natura 2000"?</h2>
-    <ol>
-<li>Lībija</li>
-<li>Ķīna</li>
-<li>Liepāja</li>
-<li>Čīle</li>
-    </ol>
-</section>
+    <h2>Kurš galamērķis ir vienlaicīgi gan kontinents, gan valsts?</h2>
+       <div class="grid-container">
+        <label> <input type="radio" name="2" value="Liepāja">Liepāja</label>
+        <label> <input type="radio" name="2" value="Austrālija">Austrālija</label>
+        <label> <input type="radio" name="2" value="Lietuva">Lietuva</label>
+        <label> <input type="radio" name="2" value="Kanāda">Kanāda</label>
+       </div>
+    </section>
+    <section>
+        <h2>Pie kura galamērķa ir īpašī aizsargājama ūdensputnu ligzdošanas teritorija, kas iekļauta "Natura 2000"?</h2>
+           <div class="grid-container">
+            <label> <input type="radio" name="3" value="Lībija">Lībija</label>
+            <label> <input type="radio" name="3" value="Ķīna">Ķīna</label>
+            <label> <input type="radio" name="3" value="Liepāja">Liepāja</label>
+            <label> <input type="radio" name="3" value="Čīle">Čīle</label>
+           </div>
+        </section>
+</main>
 </body>
 </html>
