@@ -49,7 +49,7 @@ html {
       cursor: pointer;
       border-radius: 20px;
       transition: 0.5s;
-      
+      padding-left: 30px;
   }
   .grid-container{
       display: grid;
@@ -63,4 +63,7 @@ section{
     height: 100vh;
     scroll-snap-align: start;
     scroll-margin-top:60px;
+}
+input{
+display: none;
 }

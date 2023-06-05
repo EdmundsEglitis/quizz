@@ -1,9 +1,23 @@
-async function json() {
-    const response = await fetch("questions (1).json");
+const response = await fetch("questions.json");
     const questions = await response.json();
-    console.log(questions);
-  }
 
+  const main = document.getElementById("main");
+  
+  questions.forEach((q) => {
+    const form = document.createElement("form")
+    main.appendChild(form);
+
+    const qtext = document.createElement("p")
+    form.appendChild(qtext)
+    qtext.textContent = q["question"]
+        console.log(form);
+
+        const container = document.createElement('div');
+        document.className = "grid-container"
+        form.appendChild(container);
+
+      const allAnswser = q.answers;
+  })
 
 
 
@@ -33,6 +47,16 @@ if (localStorageTheme == "light" || !localStorageTheme) {
   html.dataset.theme = "dark";
   toggleTheme.checked = true;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 const visasPareizaAtbilde = ["Indonēzija", "Austrālija", "Liepāja"] 
